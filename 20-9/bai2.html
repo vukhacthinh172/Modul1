@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #close1 {
+        display: none;
+        width: 200px;
+        height: 100px;
+        background-color: lightgray;
+    }
+</style>
+
+<body>
+    <!-- 2. tạo 1 button( click ) khi click vào sẽ hiện ra 1 div trong div
+        có icon (X) khi nhấn icon X đóng div lại. -->
+
+    <div class="close">
+        <span id="close1">X</span>
+    </div>
+    <button id="click">click</button>
+    <script>
+        let element = document.getElementsByClassName("close");
+        let element1 = document.getElementById("close1")
+        click.addEventListener("click", () => {
+            document.getElementById("close1").style.display = "block"
+        })
+        close1.addEventListener("click", () => {
+            document.getElementById("close1").style.display = "none"
+        })
+
+    </script>
+</body>
+
+</html>

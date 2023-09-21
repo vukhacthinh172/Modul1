@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let arr = [15, 56, 78, 85, 44, 12, 115, 48, 562, 880, 10]
+    let maxValue = 0;
+    let maxIndex = 0;
+    for (let i = 1; i < arr.length; i++)
+      if (arr[i] > maxValue) {
+        maxValue = arr[i];
+        maxIndex = i;
+      }
+    console.log("Phần tử lớn nhất là:", maxValue);
+    console.log("Vị trí của phần tử lớn nhất trong mảng là:", maxIndex);
+  </script>
+</body>
+
+</html>

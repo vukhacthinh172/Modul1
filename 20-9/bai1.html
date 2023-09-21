@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  tạo  1 div chứa 1 cái ảnh khi click vào ảnh đó sẽ thay đổi thành
+        ảnh khác. -->
+
+    <div id="changeImage">
+        <img id="click" onclick="image()" src="https://th.bing.com/th/id/OIP.MnW6i3XavUaz7oR7wp5D3AHaHP?pid=ImgDet&rs=1"
+            alt="anh1">
+    </div>
+    <script>
+        let arr = ["https://i.pinimg.com/736x/ec/ad/b5/ecadb573c005132b5e9c2bbd05f88c19.jpg",
+            "https://tiengtrung.com/wp-content/uploads/2022/01/Untitled-1-removebg.png",
+            "https://th.bing.com/th/id/OIP.MnW6i3XavUaz7oR7wp5D3AHaHP?pid=ImgDet&rs=1"]
+        let count = 0;
+        function image() {
+            count++;
+            if (count == 3) {
+                count = 0;
+            }
+            document.getElementById("click").src = arr[count];
+        }
+    </script>
+</body>
+
+</html>

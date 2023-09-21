@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  3. tạo giao diện gồm ô input và nút button (save)
+        khi người dùng nhập nội dung vào ô input nhấn (save) sẽ lưu vào 1 cái mảng
+ -->
+    <input type="text" id="btnSearch">
+    <button onclick="save()">save</button>
+    <script>
+        let arr = [];
+        function save() {
+            let element = document.getElementById("btnSearch").value;
+            if (element.indexOf(" ") !== 0 && element.lastIndexOf(" ") !== element.length - 1) {
+                arr.push(element);
+                document.getElementById("btnSearch").value = " "
+            } else {
+                alert("HÃy nhập giá trị hợp lệ")
+            }
+        }
+        console.log(arr);
+    </script>
+</body>
+
+</html>
